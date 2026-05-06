@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  h1 {
+    color: #2c3e50;
+  }
+
+  h2 {
+    color: #34495e;
+    margin-top: 20px;
+  }
+
+  nav {
+    margin-bottom: 20px;
+  }
+
+  nav a {
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+    color: #3498db;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  input, select {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  button {
+    padding: 6px 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  button:hover {
+    opacity: 0.9;
+  }
+
+  /* Button colours */
+  button {
+    background-color: #3498db;
+    color: white;
+  }
+
+  /* Containers */
+  #studentsList, #universitiesList, #enrollmentList {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  /* Row spacing */
+  #studentsList div,
+  #universitiesList div,
+  #enrollmentList div {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+  }
+</style>
+  <title>Enrollments</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+   <script type="module" src="./app.js"></script>
+</head>
+<body>
+
+<h1>Enrollments</h1>
+
+<nav>
+  <a href="students.html">Students</a> |
+  <a href="universities.html">Universities</a> |
+  <a href="enrollments.html">Enrollments</a>
+</nav>
+
+<h2>Enroll Student</h2>
+<select id="studentSelect"></select>
+<select id="uniSelect"></select>
+<button id="enrollBtn">Add</button>
+<h2>Enrollment List</h2>
+<div id="enrollmentList"></div>
+
+</body>
+</html>
